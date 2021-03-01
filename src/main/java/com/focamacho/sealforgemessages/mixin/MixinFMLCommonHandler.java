@@ -29,8 +29,8 @@ public class MixinFMLCommonHandler {
 
     @ModifyConstant(method = "handleServerHandshake")
     private String getMessage(String original) {
-        if(original.equalsIgnoreCase("Server is still starting! Please wait before reconnecting.")) return config.serverStarting;
-        else if(original.equalsIgnoreCase("This server has mods that require FML/Forge to be installed on the client. Contact your server admin for more details.")) return config.missingMods;
+        if(original.equalsIgnoreCase("Server is still starting! Please wait before reconnecting.")) return config.serverStarting.replace("&", "§");
+        else if(original.equalsIgnoreCase("This server has mods that require FML/Forge to be installed on the client. Contact your server admin for more details.")) return config.missingMods.replace("&", "§");
         else return original;
     }
 
