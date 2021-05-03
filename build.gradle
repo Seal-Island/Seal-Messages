@@ -78,7 +78,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
+    minecraft 'net.minecraftforge:forge:1.16.5-36.1.16'
     embed('org.spongepowered:mixin:0.8.3-SNAPSHOT'){ transitive = false }
     embed 'com.focamacho:sealconfig:1.2'
 }
